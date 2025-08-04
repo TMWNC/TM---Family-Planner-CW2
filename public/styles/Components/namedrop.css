@@ -1,0 +1,25 @@
+.namedrop{
+    
+    padding: 1em;
+    min-height: 2em;
+display: flex;
+align-items: center;
+justify-content: left;
+flex-direction: column;
+list-style-type: none;
+margin:0px;
+}
+.namedrop li{
+    width: 100%;
+    cursor: pointer;
+    background-color: wheat;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+   
+
+}
+.namedrop p{
+    padding-left: 3em;
+    height: 100%;
+}

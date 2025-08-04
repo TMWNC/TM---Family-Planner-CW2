@@ -1,0 +1,38 @@
+/*This form controls the styling for the login form*/
+
+
+/*stylings input areas and buttons*/
+  input,
+ textarea {
+
+    border: 1px solid #444;
+    background-color: var(--FontWhite);
+    color: var(--FontBlack);
+    border-radius: 0.5em;
+    transition: border-color 0.3s ease;
+  }
+
+
+    input:focus,
+ textarea:focus {
+    outline: none;
+    border-color: var(--AccentMidnight);
+    box-shadow: 0 0 0 3px rgba(70, 166, 111, 0.2);
+  }
+
+  button {
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+  }
+
+
+   input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--AccentMidnight);
+    box-shadow: 0 0 0 3px rgba(70, 166, 111, 0.2);
+  }

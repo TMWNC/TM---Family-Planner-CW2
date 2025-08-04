@@ -1,0 +1,35 @@
+<!-- Created 10/07/2025 by Tommy Mannix -->
+<!-- This is The main landing  page for the site -->
+
+<!DOCTYPE html>
+<!-- set document to default english for UK english not US -->
+<html lang="en-GB">
+
+<%- include('../Partials/header') %>
+
+
+<%- include('../Partials/Banner') %>
+<body >
+
+<button id="CreateEventButton"  class ="AbsoluteRoundal" aria-label="Add new item"><span aria-hidden="true" class="plus">+</span></button>
+<section class ="activetaskFullpage">
+
+    <h2>Events </h2>
+
+<div id ="eventContainer" class = "EventContainer"> 
+
+
+
+</div>
+
+
+
+</section>
+
+<%- include('../Partials/EventModel') %>
+
+<script src="../public/Javascript/Events/getEvents.js"></script>
+<script src="../public/Javascript/Events/EventPageModel.js"></script>
+</body>
+
+</html>

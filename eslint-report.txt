@@ -1,0 +1,124 @@
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\Routes\AuthRoute.js[24m[0m
+[0m  [2m10:7[22m   [31merror[39m  'path' is assigned a value but never used     [2mno-unused-vars[22m[0m
+[0m  [2m11:7[22m   [31merror[39m  'session' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m  [2m38:25[22m  [31merror[39m  'req' is defined but never used               [2mno-unused-vars[22m[0m
+[0m  [2m38:30[22m  [31merror[39m  'res' is defined but never used               [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\Routes\EventsRoute.js[24m[0m
+[0m  [2m12:7[22m  [31merror[39m  'path' is assigned a value but never used         [2mno-unused-vars[22m[0m
+[0m  [2m19:7[22m  [31merror[39m  'MySqlModule' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\Routes\HomeRoute.js[24m[0m
+[0m  [2m12:7[22m   [31merror[39m  'path' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m  [2m35:48[22m  [31merror[39m  'req' is defined but never used            [2mno-unused-vars[22m[0m
+[0m  [2m35:53[22m  [31merror[39m  'res' is defined but never used            [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\Routes\TasksRoute.js[24m[0m
+[0m  [2m12:7[22m  [31merror[39m  'path' is assigned a value but never used         [2mno-unused-vars[22m[0m
+[0m  [2m19:7[22m  [31merror[39m  'MySqlModule' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\__tests__\IntegrationTests\Login.Test.js[24m[0m
+[0m  [2m16:1[22m  [31merror[39m  'beforeEach' is not defined  [2mno-undef[22m[0m
+[0m  [2m21:1[22m  [31merror[39m  'describe' is not defined    [2mno-undef[22m[0m
+[0m  [2m27:3[22m  [31merror[39m  'test' is not defined        [2mno-undef[22m[0m
+[0m  [2m39:5[22m  [31merror[39m  'expect' is not defined      [2mno-undef[22m[0m
+[0m  [2m48:5[22m  [31merror[39m  'expect' is not defined      [2mno-undef[22m[0m
+[0m  [2m55:5[22m  [31merror[39m  'expect' is not defined      [2mno-undef[22m[0m
+[0m  [2m56:5[22m  [31merror[39m  'expect' is not defined      [2mno-undef[22m[0m
+[0m  [2m63:3[22m  [31merror[39m  'test' is not defined        [2mno-undef[22m[0m
+[0m  [2m73:5[22m  [31merror[39m  'expect' is not defined      [2mno-undef[22m[0m
+[0m  [2m74:5[22m  [31merror[39m  'expect' is not defined      [2mno-undef[22m[0m
+[0m  [2m84:5[22m  [31merror[39m  'expect' is not defined      [2mno-undef[22m[0m
+[0m  [2m90:5[22m  [31merror[39m  'expect' is not defined      [2mno-undef[22m[0m
+[0m  [2m91:5[22m  [31merror[39m  'expect' is not defined      [2mno-undef[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\__tests__\Unit tests\DatabaseUnitTests.test.js[24m[0m
+[0m  [2m14:1[22m  [31merror[39m  'beforeAll' is not defined  [2mno-undef[22m[0m
+[0m  [2m18:1[22m  [31merror[39m  'afterAll' is not defined   [2mno-undef[22m[0m
+[0m  [2m22:1[22m  [31merror[39m  'describe' is not defined   [2mno-undef[22m[0m
+[0m  [2m26:1[22m  [31merror[39m  'test' is not defined       [2mno-undef[22m[0m
+[0m  [2m28:3[22m  [31merror[39m  'expect' is not defined     [2mno-undef[22m[0m
+[0m  [2m29:3[22m  [31merror[39m  'expect' is not defined     [2mno-undef[22m[0m
+[0m  [2m35:1[22m  [31merror[39m  'test' is not defined       [2mno-undef[22m[0m
+[0m  [2m37:3[22m  [31merror[39m  'expect' is not defined     [2mno-undef[22m[0m
+[0m  [2m40:3[22m  [31merror[39m  'expect' is not defined     [2mno-undef[22m[0m
+[0m  [2m46:1[22m  [31merror[39m  'test' is not defined       [2mno-undef[22m[0m
+[0m  [2m48:3[22m  [31merror[39m  'expect' is not defined     [2mno-undef[22m[0m
+[0m  [2m51:3[22m  [31merror[39m  'expect' is not defined     [2mno-undef[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\__tests__\Unit tests\HashingTests.test.js[24m[0m
+[0m  [2m13:1[22m  [31merror[39m  'describe' is not defined  [2mno-undef[22m[0m
+[0m  [2m16:1[22m  [31merror[39m  'test' is not defined      [2mno-undef[22m[0m
+[0m  [2m18:3[22m  [31merror[39m  'expect' is not defined    [2mno-undef[22m[0m
+[0m  [2m24:1[22m  [31merror[39m  'test' is not defined      [2mno-undef[22m[0m
+[0m  [2m26:3[22m  [31merror[39m  'expect' is not defined    [2mno-undef[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\__tests__\runAllTests.test.js[24m[0m
+[0m  [2m1:1[22m  [31merror[39m  'describe' is not defined  [2mno-undef[22m[0m
+[0m  [2m6:3[22m  [31merror[39m  'describe' is not defined  [2mno-undef[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\eslint.config.mjs[24m[0m
+[0m  [2m2:1[22m  [31merror[39m  Parsing error: 'import' and 'export' may appear only with 'sourceType: module'[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\middleware\FlashMessages.js[24m[0m
+[0m  [2m8:7[22m  [31merror[39m  'flash' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\public\Javascript\Events\AddClick.js[24m[0m
+[0m   [2m4:27[22m  [31merror[39m  'document' is not defined                        [2mno-undef[22m[0m
+[0m   [2m8:32[22m  [31merror[39m  'document' is not defined                        [2mno-undef[22m[0m
+[0m  [2m14:15[22m  [31merror[39m  'document' is not defined                        [2mno-undef[22m[0m
+[0m  [2m19:7[22m   [31merror[39m  'memberlist' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m  [2m26:19[22m  [31merror[39m  'document' is not defined                        [2mno-undef[22m[0m
+[0m  [2m39:9[22m   [31merror[39m  'alert' is not defined                           [2mno-undef[22m[0m
+[0m  [2m52:9[22m   [31merror[39m  'alert' is not defined                           [2mno-undef[22m[0m
+[0m  [2m58:20[22m  [31merror[39m  'document' is not defined                        [2mno-undef[22m[0m
+[0m  [2m62:22[22m  [31merror[39m  'document' is not defined                        [2mno-undef[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\public\Javascript\Events\EventClick.js[24m[0m
+[0m  [2m15:6[22m   [31merror[39m  Empty block statement                       [2mno-empty[22m[0m
+[0m  [2m22:16[22m  [31merror[39m  'showEventModal' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m29:19[22m  [31merror[39m  'document' is not defined                   [2mno-undef[22m[0m
+[0m  [2m30:21[22m  [31merror[39m  'document' is not defined                   [2mno-undef[22m[0m
+[0m  [2m83:3[22m   [31merror[39m  'document' is not defined                   [2mno-undef[22m[0m
+[0m  [2m84:5[22m   [31merror[39m  'document' is not defined                   [2mno-undef[22m[0m
+[0m  [2m88:3[22m   [31merror[39m  'document' is not defined                   [2mno-undef[22m[0m
+[0m  [2m90:7[22m   [31merror[39m  'document' is not defined                   [2mno-undef[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\public\Javascript\Events\getEvents.js[24m[0m
+[0m   [2m12:23[22m  [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m   [2m29:28[22m  [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m   [2m33:22[22m  [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m   [2m39:35[22m  [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m   [2m45:27[22m  [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m   [2m49:22[22m  [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m   [2m54:23[22m  [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m   [2m59:22[22m  [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m   [2m67:26[22m  [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m   [2m82:11[22m  [31merror[39m  'showEventModal' is not defined  [2mno-undef[22m[0m
+[0m   [2m94:5[22m   [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m  [2m104:1[22m   [31merror[39m  'document' is not defined        [2mno-undef[22m[0m
+[0m[0m
+[0m[4mC:\Users\man106271\Documents\GitHub\Family-Planner-CW2\public\Javascript\Tasks\getTasks.js[24m[0m
+[0m   [2m21:23[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m   [2m38:28[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m   [2m42:22[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m   [2m48:35[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m   [2m54:27[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m   [2m58:22[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m   [2m63:23[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m   [2m68:22[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m   [2m76:26[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m  [2m103:5[22m   [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m  [2m132:8[22m   [31merror[39m  Empty block statement      [2mno-empty[22m[0m
+[0m  [2m180:17[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m  [2m181:19[22m  [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m  [2m210:1[22m   [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m  [2m232:1[22m   [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m  [2m233:3[22m   [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m  [2m237:1[22m   [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m  [2m239:5[22m   [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m  [2m272:1[22m   [31merror[39m  'document' is not defined  [2mno-undef[22m[0m
+[0m[0m
+[0m[31m[1m✖ 93 problems (93 errors, 0 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m

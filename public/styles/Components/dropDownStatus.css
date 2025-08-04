@@ -1,0 +1,24 @@
+.dropdownStatus{
+    padding: 1em 1.2em;
+    border-radius: 3em;
+    border: none;
+    font-weight: bold;
+    appearance: none; 
+    background-color: #f0f0f0;
+    color: #333;
+    width: 30%;
+    cursor: pointer;
+
+
+
+}
+
+.dropdownStatus.complete {
+  background-color: #c1f0c1; /* greenish */
+  color: #065f46;
+}
+
+.dropdownStatus.incomplete {
+  background-color: #fde2e1; /* reddish */
+  color: #b91c1c;
+}

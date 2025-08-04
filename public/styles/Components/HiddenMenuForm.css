@@ -1,0 +1,79 @@
+.hiddenmenuform {
+    height: auto;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 90%;
+    justify-self: center;
+    row-gap: 1rem;
+}
+
+
+
+
+.hiddenmenuform div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+.hiddenmenuform button{
+    width: 100%;
+    min-height: 3rem;
+    display: flex;
+margin: auto;
+justify-content: center;
+align-items: center;
+ 
+  
+}
+
+
+
+@media (min-width: 400px) {
+    /* Small tablets and larger phones (portrait) */
+   
+  }
+
+
+  
+@media (min-width: 768px) {
+  /* Typical tablets (iPad portrait and above) */
+  .hiddenmenu{
+  width: 40rem;
+  }
+
+  
+.hiddenmenuform button{
+    
+    max-height: 3rem;
+    max-width: 20em;
+    display: flex;
+margin: auto;
+
+ 
+  
+}
+
+}
+
+
+@media (min-width: 1024px) {
+  /* Small laptops and larger tablets in landscape */
+  
+
+}
+
+
+@media (min-width: 1280px) {
+  /* Desktop screens */
+  
+}
+
+@media (min-width: 1440px) {
+  /* Larger desktops and ultrawide monitors */
+  
+}

@@ -1,0 +1,46 @@
+<!-- Created 08/07/2025 by Tommy Mannix -->
+<!-- This is The login page for the site -->
+
+<!DOCTYPE html>
+<!-- set document to default english for UK english not US -->
+<html lang="en-GB">
+
+<%- include('../Partials/header') %>
+
+<body class="CreateAccountPageStructure">
+
+<section>
+
+    <form action="/auth/create" method="post" class="styled-form hardbox">
+        <h1>Create an account</h1>
+      
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+      
+        <label for="FName">First Name</label>
+        <input type="Text" id="FName" name="FName" placeholder="First Name">
+
+        <label for="SName">Surname</label>
+        <input type="Text" id="SName" name="SName" placeholder="Surname">
+
+        <label for="Password">Password</label>
+        <input type="password" id="Password" name="Password" placeholder="Password">
+      
+        <label for="PasswordConfirm">Confirm Password</label>
+        <input type="password" id="PasswordConfirm" name="PasswordConfirm" placeholder="Password">
+
+        <% if (error_msg) { %>
+          <p> <%= error_msg %></p>
+        <% } %>
+
+        <button type="submit">Create Account</button>
+
+        <a href="/auth/login"> Already Have an account?</a>
+      </form>
+
+
+</section>
+
+</body>
+
+</html>

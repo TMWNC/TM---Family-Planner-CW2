@@ -1,0 +1,100 @@
+/* Hide welcome section unless on desktop */
+.welcomeSection {
+  display: none;
+}
+
+/* Main container for all event groups */
+.activetaskFullpage {
+  width: 100%;
+  min-height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+
+}
+
+
+.activetaskFullpage h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Each group (e.g. Today, August) */
+.EventGroup {
+  margin-bottom: 2em;
+  width: 100%;
+}
+.EventGroup h2 {
+ text-align: left;
+}
+/* Heading for each group */
+.EventHeader {
+  font-size: 1.3em;
+  margin: 0.5em 0;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.3em;
+  text-align: left;
+}
+
+/* Container that holds all events in a group */
+.EventContainer {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping if needed */
+  gap: 1em;
+  margin-top: 0.5em;
+  flex-direction: column;
+}
+
+
+
+@media (min-width: 400px) {
+  /* Small tablets and larger phones (portrait) */
+
+}
+
+
+
+@media (min-width: 768px) {
+/* Typical tablets (iPad portrait and above) */
+
+}
+
+
+@media (min-width: 1024px) {
+/* Small laptops and larger tablets in landscape */
+
+
+}
+
+
+/* Desktop-specific layout (optional refinement) */
+@media (min-width: 1280px) {
+  .welcomeSection {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    padding: 1em;
+  }
+
+  .welcomeSection h1 {
+    font-size: 1.5em;
+    font-weight: 100;
+    grid-column: 1 / 3;
+  }
+
+  .activetasks {
+    width: 30%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-template-rows: 10% 90%;
+  }
+
+  .activetasks h2 {
+    text-align: center;
+  }
+
+  .EventContainer{
+    flex-direction: row;
+  }
+}

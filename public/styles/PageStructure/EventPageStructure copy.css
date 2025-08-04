@@ -1,0 +1,121 @@
+.welcomeSection{
+display: none;
+}
+
+/* container for active tasks*/
+.activetaskFullpage{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-template-rows: 10% 90%;
+ 
+}
+
+.activetaskFullpage h2{
+    width: 100%;
+    text-align: center;
+}
+
+.EventHeader{
+  grid-column:1/4 ;
+
+}
+
+.activetaskFullpage .EventContainer {
+  display: grid;
+  grid-template-columns: 1fr ;
+ 
+  
+}
+
+.EventGroup {
+ height: auto;
+}
+
+
+
+@media (min-width: 400px) {
+    /* Small tablets and larger phones (portrait) */
+  
+  }
+
+
+  
+@media (min-width: 768px) {
+  /* Typical tablets (iPad portrait and above) */
+  
+}
+
+
+@media (min-width: 1024px) {
+  /* Small laptops and larger tablets in landscape */
+  
+
+}
+
+
+@media (min-width: 1280px) {
+  /* Desktop screens */
+  .welcomeSection{
+    width: 100%;
+    display: grid;
+  
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+   
+    padding: 1em;
+}
+.welcomeSection h1{
+    font-size: 1.5em;
+    font-weight: 100;
+    grid-column: 1 / 3;
+}
+
+
+
+/* container for active tasks*/
+.activetasks{
+    width: 30%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-template-rows: 10% 90%;
+ 
+}
+
+.activetasks h2{
+    width: 100%;
+    text-align: center;
+}
+
+
+.activetaskFullpage .EventContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+.EventHeader{
+  grid-column:1/4 ;
+  display: flex;
+  justify-self: flex-start;
+  align-items: center;
+  margin-bottom: 1em;
+
+}
+
+.EventHeader::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: #000; /* or #ccc for lighter line */
+  align-self: flex-end;
+  
+}
+}
+
+@media (min-width: 1440px) {
+  /* Larger desktops and ultrawide monitors */
+ 
+}

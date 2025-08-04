@@ -1,0 +1,64 @@
+
+
+/*Import font face for Open Sans*/
+@import url("https://use.typekit.net/now4oxo.css");
+
+
+/*Declare house colours for use in the development*/
+:root{
+
+/*Ocean Teal*/
+--PrimaryBrandColour:rgb(25,80,115);
+/*Midnight Navy*/
+--AccentMidnight:rgb(13,35,64);
+/*Deep Steel Blue*/
+--AccentDeepSteel:rgb(13,44,64);
+/*Sky Slate*/
+--AccentSkySlate:rgb(126,166,191);
+/*Ice Blue*/
+--AccentIceBlue:rgb(201,226,242);
+
+/*Font colours*/
+--FontWhite:#F8F8F9;
+--FontBlack:rgb(19,30,41);
+
+/*Button colours*/
+--ButtonUp:rgba(114,87,250);
+--ButtonHover:rgba(19,30,41);
+--Accessiblewhite:#f2f2f2;
+
+--red:#F21B2D;
+--green:#119500;
+--blue:#416BBF;
+
+
+}
+
+
+/*Global page set up*/
+*{
+    box-sizing: border-box;
+    
+/*remove margins*/
+    margin:0;
+
+    /*set all fonts to be open sans*/
+    font-family: "open-sans", sans-serif;
+
+}
+
+/*Global colours for buttons*/
+button,input[type=button], input[type=submit], input[type=reset] {
+    background-color: var(--ButtonUp);
+    color:var(--FontWhite);
+    border: 0.2rem var(--FontBlack);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color: var(--ButtonHover);
+    color:var(--FontWhite);
+}
+

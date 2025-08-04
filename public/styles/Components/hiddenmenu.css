@@ -1,0 +1,62 @@
+/* this is the CSS for the hidden slide menus 
+
+*/
+
+.hiddenmenu{
+    top: 0px;
+    left: -1000px;
+    z-index: 1100;
+overflow-y: scroll;
+    position: fixed;
+    width: 100vw;
+background-color: var(--Accessiblewhite);
+    height: 100vh;
+    transition: all 0.5s ease-in;
+
+}
+
+.hiddenmenu.active{
+    top: 0px;
+    left: 0px;
+}
+
+.hiddenmenu .closebutton{
+    width: 40%;
+    min-width: 4rem;
+    padding: 0.7rem;
+    justify-self: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+@media (min-width: 400px) {
+    /* Small tablets and larger phones (portrait) */
+   
+  }
+
+
+  
+@media (min-width: 768px) {
+  /* Typical tablets (iPad portrait and above) */
+  .hiddenmenu{
+  width: 40rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  /* Small laptops and larger tablets in landscape */
+  
+
+}
+
+
+@media (min-width: 1280px) {
+  /* Desktop screens */
+  
+}
+
+@media (min-width: 1440px) {
+  /* Larger desktops and ultrawide monitors */
+  
+}

@@ -1,0 +1,222 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "DB Notebook",
+    "content": "\\about\n\n/*created by Tommy Mannix 10/07/2025\n/* create the event type table */\nCREATE TABLE TblEventType (\nEventTypeID INT AUTO_INCREMENT PRIMARY KEY Not Null,\nEventTypeName VARCHAR(255) Not NULL\n);\n\n/* add sample event  type */\nINSERT into TblEventType (EventTypeName) VALUES ('Birthday');\n\n\n\n\n/*created by Tommy Mannix 10/07/2025\n/* create the event  table */\nCREATE TABLE TblEvents (\nEventID INT AUTO_INCREMENT PRIMARY KEY Not Null,\nEventName VARCHAR(255) Not NULL,\nEventDescription LONGTEXT,\nEventTime TIME NOT NULL,\nEventDate DATE NOT NULL,\nEventLatitude DECIMAL,\nEventLongitude DECIMAL,\nEventTypeID int NOT NULL,\n    CONSTRAINT EventTypeID FOREIGN KEY (EventTypeID)\n    REFERENCES TblEventType(EventTypeID)\n    );\n\nINSERT INTO TblEvents(EventName,EventDescription,EventTime,EventDate,EventLatitude,EventLongitude,EventTypeID) \nvalues ('Monicas Birthday Party','Monicas 30th init','14:30:00',\n  '2025-07-15',\n  52.9548,\n  -1.1581,\n  1)\n/*created by Tommy Mannix 10/07/2025\n/* create the event  table */\nCREATE TABLE TblEventAttendees (\nAttendeeID INT AUTO_INCREMENT PRIMARY KEY Not Null,\nResponseStatus varchar(255) NOT NULL,\nEventID int NOT NULL,\n CONSTRAINT EventAttendeeEvent FOREIGN KEY (EventID)\n    REFERENCES TblEvents(EventID),\nUserID int NOT NULL,\n    CONSTRAINT EventAttendee FOREIGN KEY (UserID)\n    REFERENCES TblUsers(UserID)\n    );",
+    "options": {
+        "tabSize": 4,
+        "insertSpaces": true,
+        "indentSize": 4,
+        "defaultEOL": "CRLF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": {
+        "cursorState": [
+            {
+                "inSelectionMode": false,
+                "selectionStart": {
+                    "lineNumber": 44,
+                    "column": 35
+                },
+                "position": {
+                    "lineNumber": 44,
+                    "column": 35
+                }
+            }
+        ],
+        "viewState": {
+            "scrollLeft": 0,
+            "firstPosition": {
+                "lineNumber": 29,
+                "column": 1
+            },
+            "firstPositionDeltaTop": -9
+        },
+        "contributionsState": {
+            "editor.contrib.folding": {},
+            "editor.contrib.wordHighlighter": false
+        }
+    },
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 1,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "content": "Welcome to the MySQL Shell - DB Notebook.\n\nPress Ctrl+Enter to execute the code block.\n\nExecute \\sql to switch to SQL, \\js to JavaScript and \\ts to TypeScript mode.\nExecute \\help or \\? for help;",
+                            "language": "ansi"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 6
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 2,
+                "end": 14,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "index": 0,
+                            "resultId": "c0c59ad4-17cf-4ae7-aba4-2fdd148fb3a7",
+                            "content": "OK, 0 records retrieved in 121.029ms"
+                        },
+                        {
+                            "type": 2,
+                            "index": 1,
+                            "resultId": "dfbdbb88-1fa1-44c3-8900-14c680ac8b3f",
+                            "content": "OK, 1 row affected in 24.864ms"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 191
+                        },
+                        "contentStart": 72,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 191,
+                            "length": 92
+                        },
+                        "contentStart": 222,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 283,
+                            "length": 3
+                        },
+                        "contentStart": 282,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 15,
+                "end": 30,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "index": 0,
+                            "resultId": "21b84d76-f09c-45c0-cfe6-fdd5e1f8eb1d",
+                            "content": "OK, 0 records retrieved in 69.779ms"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 425
+                        },
+                        "contentStart": 68,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 425,
+                            "length": 1
+                        },
+                        "contentStart": 424,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 31,
+                "end": 36,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "index": 0,
+                            "resultId": "50a80b08-f275-4c78-84b2-d0b845f004cc",
+                            "content": "OK, 1 row affected in 21.606ms"
+                        }
+                    ]
+                },
+                "currentHeight": 28,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 219
+                        },
+                        "contentStart": 0,
+                        "state": 3
+                    }
+                ]
+            },
+            "data": []
+        },
+        {
+            "state": {
+                "start": 37,
+                "end": 48,
+                "language": "mysql",
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 409
+                        },
+                        "contentStart": 67,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        }
+    ]
+}

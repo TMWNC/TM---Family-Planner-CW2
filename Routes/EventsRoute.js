@@ -1,0 +1,51 @@
+
+
+// Created 10/07/2025 by Tommy Mannix
+
+////////////////////////////////////////////////////////
+////////// This route caters for all /event routes
+////////////////////////////////////////////////////////
+
+
+const express = require('express');
+const router =  express.Router();
+
+
+
+/////////////////////////////////////////////////////////
+////// Middle ware that will be needed for route/////////
+// Check authorisation of express sessions for protected end points
+const CheckAuth = require('../middleware/checkauth');
+
+
+
+
+//////////////////////////////////////////////////////////
+//////             Start of routes     ///////////////////
+//////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////
+//////             /event        ///////////////////
+
+//////////////// This the events page as a rendered page
+///////////////
+router.get('/', CheckAuth.requireAuth, async(req, res) => {
+  try{
+    res.render('../Views/~Event/Events');
+  }
+  catch{
+    res.json('no events');
+  }
+      
+   });
+  
+
+
+   
+
+
+
+
+
+  module.exports = router;

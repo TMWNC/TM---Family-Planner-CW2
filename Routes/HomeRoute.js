@@ -1,0 +1,38 @@
+
+
+// Created 08/07/2025 by Tommy Mannix
+
+////////////////////////////////////////////////////////
+////////// This route caters for all /home routes
+////////////////////////////////////////////////////////
+
+
+const express = require('express');
+const router =  express.Router();
+
+
+
+/////////////////////////////////////////////////////////
+////// Middle ware that will be needed for route/////////
+// Check authorisation of express sessions for protected end points
+const CheckAuth = require('../middleware/checkauth');
+
+
+
+//////////////////////////////////////////////////////////
+//////             Start of routes     ///////////////////
+//////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////
+//////             /home        ///////////////////
+ router.get('/', CheckAuth.requireAuth, async(req, res) => {
+     console.log(req.session.userName);
+      res.render('../Views/~home/index', {username:req.session.userName});
+    
+ });
+
+
+
+
+  module.exports = router;

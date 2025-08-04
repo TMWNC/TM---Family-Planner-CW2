@@ -1,0 +1,81 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "New Procedure",
+    "content": "DELIMITER %%\nDROP PROCEDURE IF EXISTS `DB_Family_Planner`.`GetUsers`%%\n/* Add or remove procedure IN/OUT/INOUT parameters as needed. */\nCREATE PROCEDURE `DB_Family_Planner`.`GetUsers`(\n    IN arg1 INTEGER, \n    IN UserName Varchar(255),\n    IN Password varchar(255))\nSQL SECURITY DEFINER\nNOT DETERMINISTIC\nBEGIN\n    SELECT TblUsers.UserID FROM TblUsers INNER JOIN TblAuthentication ON TblAuthentication.UserID = TblUsers.UserID\n    where TblAuthentication.UserName = UserName AND TblAuthentication.Password = Password;\nEND%%\nDELIMITER ;\n\nCALL `DB_Family_Planner`.`GetUsers`(1, @arg2);\nSELECT @arg2;",
+    "options": {
+        "tabSize": 4,
+        "indentSize": 4,
+        "insertSpaces": true,
+        "defaultEOL": "LF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": null,
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 17,
+                "language": "mysql",
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": "%%",
+                        "span": {
+                            "start": 0,
+                            "length": 12
+                        },
+                        "contentStart": 0,
+                        "state": 4
+                    },
+                    {
+                        "delimiter": "%%",
+                        "span": {
+                            "start": 12,
+                            "length": 58
+                        },
+                        "contentStart": 14,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": "%%",
+                        "span": {
+                            "start": 70,
+                            "length": 454
+                        },
+                        "contentStart": 136,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 524,
+                            "length": 12
+                        },
+                        "contentStart": 525,
+                        "state": 4
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 536,
+                            "length": 48
+                        },
+                        "contentStart": 538,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 584,
+                            "length": 14
+                        },
+                        "contentStart": 585,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        }
+    ]
+}

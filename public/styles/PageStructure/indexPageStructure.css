@@ -1,0 +1,85 @@
+.welcomeSection{
+display: none;
+}
+
+/* container for active tasks*/
+.activetasks{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-template-rows: 10% 90%;
+ 
+}
+
+.activetasks h2{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.activetasks .EventContainer{
+  
+   
+}
+@media (min-width: 400px) {
+    /* Small tablets and larger phones (portrait) */
+  
+  }
+
+
+  
+@media (min-width: 768px) {
+  /* Typical tablets (iPad portrait and above) */
+  
+}
+
+
+@media (min-width: 1024px) {
+  /* Small laptops and larger tablets in landscape */
+  
+
+}
+
+
+@media (min-width: 1280px) {
+  /* Desktop screens */
+  .welcomeSection{
+    width: 100%;
+    display: grid;
+  
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+   
+    padding: 1em;
+}
+.welcomeSection h1{
+    font-size: 1.5em;
+    font-weight: 100;
+    grid-column: 1 / 3;
+}
+
+
+
+/* container for active tasks*/
+.activetasks{
+    width: 30%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-template-rows: 10% 90%;
+ 
+}
+
+.activetasks h2{
+    width: 100%;
+    text-align: center;
+}
+}
+
+@media (min-width: 1440px) {
+  /* Larger desktops and ultrawide monitors */
+ 
+}

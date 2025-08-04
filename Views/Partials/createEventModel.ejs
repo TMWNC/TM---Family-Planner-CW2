@@ -1,0 +1,56 @@
+<div id="CreateModel" class="event-modal hidden">
+    <div class="event-modal-content">
+
+      <span id="closeCreateModalBtn" class="close-modal">&times;</span>
+
+
+
+      <form class ="modaleventform">
+        <h1>Create an event</h1>
+      
+        <label for="EventName">Event Name</label>
+        <input type="Text" id="EventName" name="EventName" placeholder="Enter your event name">
+      
+        <label for="EventDescription">Event Description</label>
+        <input type="Textarea" id="EventDescription" name="EventDescription" placeholder="describe your event">
+      
+        <label for="ShortDescription">Short Event Description</label>
+        <input type="Text" id="ShortDescription" name="ShortDescription" placeholder="describe your event in one sentence">
+
+        <label for="EventStartTime">Start Time</label>
+        <input type="Time" id="EventStartTime" name="EventStartTime" >
+
+        <label for="EventDate">Event Date</label>
+        <input type="Date" id="EventDate" name="EventDate" >
+
+        <label for="Latitude">Latitude</label>
+        <input type="Text" id="Latitude" name="Latitude" placeholder="Latitude">
+
+        <label for="Longitude">Longitude</label>
+        <input type="Text" id="Longitude" name="Longitude" placeholder="Longitude">
+
+        <label for="EventType">Event Type</label>
+        <select id="EventType" name="EventType">
+       
+        </select>
+
+        <label for="attendeeSearch">Invite People</label>
+<input type="text" id="attendeeSearch" placeholder="Start typing a name...">
+<ul id="suggestionList" class="suggestions"></ul>
+
+<!-- Optional: show selected attendees -->
+<div id="selectedAttendees" class="selected-attendees"></div>
+        <% if (error_msg) { %>
+          <p> <%= error_msg %></p>
+        <% } %>
+      
+        <button type="submit">Create</button>
+      
+
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>

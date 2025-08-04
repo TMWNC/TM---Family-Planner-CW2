@@ -1,0 +1,51 @@
+
+
+// Created 21/07/2025 by Tommy Mannix
+
+////////////////////////////////////////////////////////
+////////// This route caters for all /groups routes
+////////////////////////////////////////////////////////
+
+
+const express = require('express');
+const router =  express.Router();
+
+
+
+/////////////////////////////////////////////////////////
+////// Middle ware that will be needed for route/////////
+// Check authorisation of express sessions for protected end points
+const CheckAuth = require('../middleware/checkauth');
+
+
+
+
+//////////////////////////////////////////////////////////
+//////             Start of routes     ///////////////////
+//////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////
+//////             /groups        ///////////////////
+
+//////////////// This the events page as a rendered page
+///////////////
+router.get('/', CheckAuth.requireAuth, async(req, res) => {
+  try{
+    res.render('../Views/~groups/groups');
+  }
+  catch{
+    res.json('no events');
+  }
+      
+   });
+  
+
+
+   
+
+
+
+
+
+  module.exports = router;

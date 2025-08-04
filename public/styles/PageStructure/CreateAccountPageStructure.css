@@ -1,0 +1,168 @@
+
+/*This form controls the page structure for the login form*/
+/*Designed for mobile first layout so sizings are for a mobile device*/
+
+/*outer body container */
+.CreateAccountPageStructure{
+width: 100%;
+height: 100vh;
+background-color: var(--AccentMidnight);
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+
+/*section inner container */
+/*grid is used to give scalability */
+.CreateAccountPageStructure section{
+    width:80%;
+ 
+   
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 70%;
+    gap: 2%;
+}
+
+/*for mobile make the grid single column*/
+.CreateAccountPageStructure h1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+   text-align: center;
+  
+}
+/*stylings for the form make it occupy the area below the heading 
+and show in a columnar style*/
+.CreateAccountPageStructure section form{
+width: 100%;
+height: 100%;
+background-color: var(--FontWhite);
+
+grid-column: 1 / 3;
+grid-row: 1 / 3;
+width: 90%;
+height: 100%;
+display: flex;
+flex-direction: column;
+gap: 0.4em;
+max-width: 500px;
+margin: auto;
+padding: 2em;
+}
+
+
+/*stylings input areas and buttons*/
+.CreateAccountPageStructure  input,
+  .CreateAccountPageStructure  textarea {
+    padding: 0.8em 1em;
+   
+  }
+
+
+  .CreateAccountPageStructure  input:focus,
+  .CreateAccountPageStructure  textarea:focus {
+    outline: none;
+    border-color: var(--AccentMidnight);
+    box-shadow: 0 0 0 3px rgba(70, 166, 111, 0.2);
+  }
+
+  .CreateAccountPageStructure  button {
+  
+   
+    font-size: 1em;
+    padding: 0.3em;
+    height: 15%;
+  }
+
+  .CreateAccountPageStructure a{
+    text-align: center;
+    margin-bottom: 4%;
+  }
+
+  .CreateAccountPageStructure p{
+    text-align: center;
+    color: red;
+  }
+
+  
+
+  @media (min-width: 400px) {
+    /* Small tablets and larger phones (portrait) */
+    .CreateAccountPageStructure section form{
+      grid-row: 1 / 3;
+    }
+
+    .CreateAccountPageStructure button {
+      font-size: 1.2em;
+      padding: 0.3em;
+      height: 15%;
+  }
+  }
+
+
+  
+@media (min-width: 768px) {
+  /* Typical tablets (iPad portrait and above) */
+  .CreateAccountPageStructure section form{
+    grid-row: 1 / 4;
+    gap:1.5em;
+  }
+
+  .CreateAccountPageStructure button {
+    font-size: 1.5em;
+    padding: 0.3em;
+    height: 10%;
+}
+}
+
+
+@media (min-width: 1024px) {
+  /* Small laptops and larger tablets in landscape */
+  .CreateAccountPageStructure section form{
+    grid-row: 1 / 4;
+    gap:1.5em;
+    height:70%
+  }
+
+  .CreateAccountPageStructure button {
+    font-size: 1.5em;
+    padding: 0.3em;
+    height: 10%;
+}
+
+}
+
+
+@media (min-width: 1280px) {
+  /* Desktop screens */
+  .CreateAccountPageStructure section form{
+    grid-row: 1 / 4;
+    gap:1em;
+    height:80%
+  }
+
+  .CreateAccountPageStructure button {
+    font-size: 1.5em;
+    padding: 0.3em;
+    height: 10%;
+}
+}
+
+@media (min-width: 1440px) {
+  /* Larger desktops and ultrawide monitors */
+  .CreateAccountPageStructure section form{
+    grid-row: 1 / 4;
+    gap:1em;
+    height:90%
+  }
+
+  .CreateAccountPageStructure button {
+    font-size: 1.5em;
+    padding: 0.3em;
+    height: 15%;
+}
+.CreateAccountPageStructure a{
+  font-size: 1.3em;
+}
+}

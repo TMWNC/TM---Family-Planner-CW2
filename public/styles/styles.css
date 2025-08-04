@@ -1,0 +1,32 @@
+@import url(./housestyles/houseStyle.css);
+@import url(./PageStructure/LoginPageStructure.css);
+@import url(./Containerstyles/hardbox.css);
+@import url(./Forms.css);
+@import url(./housestyles/Font-sizes.css);
+@import url(./PageStructure/CreateAccountPageStructure.css);
+@import url(./Components/Navigation.css);
+@import url(./PageStructure/indexPageStructure.css);
+@import url(./Containerstyles/EventContainer.css);
+@import url(./Containerstyles/Eventitem.css);
+@import url(./Containerstyles/StatsContainer.css);
+
+@import url(./Components/TextLocation.css);
+@import url(./PageStructure/EventPageStructure.css);
+@import url(./Components/RoundStickyButton.css);
+
+@import url(./Components//eventModal.css);
+@import url(./Components/eventdetails.css);
+
+@import url(./Components/eventCreationModel.css);
+@import url(./Components/taskdetailview.css);
+@import url(./Components/dropDownStatus.css);
+@import url(./PageStructure/groups/group-wrapper.css);
+@import url(./Components/buttons.css);
+
+@import url(./Components/hiddenmenu.css);
+
+@import url(./Components/HiddenMenuForm.css);
+
+@import url(./Components/namedrop.css);
+@import url(./PageStructure/groups/memberwrapper.css);
+@import url(./Components/taskitems.css);

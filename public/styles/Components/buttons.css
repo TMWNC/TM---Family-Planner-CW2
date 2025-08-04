@@ -1,0 +1,18 @@
+.groupbutton{
+    background-color: var(--ButtonUp);
+    width: 90%;
+    text-align: center;
+    height: 2rem;
+max-height: 2rem;
+    border-radius: 3em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+color: var(--FontWhite);
+text-decoration: none;
+}
+
+.groupbutton:hover{
+    background-color: var(--ButtonHover);
+}

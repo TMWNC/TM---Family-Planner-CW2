@@ -1,0 +1,47 @@
+<!-- Created 10/07/2025 by Tommy Mannix -->
+<!-- This is The main landing  page for the site -->
+
+<!DOCTYPE html>
+<!-- set document to default english for UK english not US -->
+<html lang="en-GB">
+
+<%- include('../Partials/header') %>
+
+
+<%- include('../Partials/Banner') %>
+<body >
+
+
+<section class="welcomeSection">
+<h1> Hello <%= username %>!</h1>
+</section>
+
+<section  >
+
+    <h2 class="TextAlignCenter">Weekly report</h2>
+
+    <div class ="StatsContainer">
+<div class =" StatItem">
+    <h2 class ="Statnum">2</h2>
+    <h2 class ="StatLabel">To Do</h2>
+</div>
+
+<div class =" StatItem">
+    <h2 class ="Statnum">2</h2>
+    <h2 class ="StatLabel">Completed</h2>
+</div>
+
+<div class = "StatItem">
+    <h2 class ="Statnum">30+</h2>
+    <h2 class ="StatLabel">Overdue</h2>
+</div>
+
+</div>
+</section>
+
+
+
+
+</body>
+
+</html>
